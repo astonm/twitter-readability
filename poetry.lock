@@ -106,6 +106,17 @@ signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0,<4)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
+name = "python-dotenv"
+version = "0.19.2"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "readability"
 version = "0.3.1"
 description = "Measure the readability of a given text using surface characteristics"
@@ -191,7 +202,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "844a6765a05f711827ef881fa393aa3fe4a27cde39db489c7071275a56034820"
+content-hash = "db2190ec0fa35688ba2ccb02dead79aad3fad541e42606f5b5b78c6fb6706797"
 
 [metadata.files]
 certifi = [
@@ -300,6 +311,10 @@ markupsafe = [
 oauthlib = [
     {file = "oauthlib-3.1.1-py2.py3-none-any.whl", hash = "sha256:42bf6354c2ed8c6acb54d971fce6f88193d97297e18602a3a886603f9d7730cc"},
     {file = "oauthlib-3.1.1.tar.gz", hash = "sha256:8f0215fcc533dd8dd1bee6f4c412d4f0cd7297307d43ac61666389e3bc3198a3"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.19.2.tar.gz", hash = "sha256:a5de49a31e953b45ff2d2fd434bbc2670e8db5273606c1e737cc6b93eff3655f"},
+    {file = "python_dotenv-0.19.2-py2.py3-none-any.whl", hash = "sha256:32b2bdc1873fd3a3c346da1c6db83d0053c3c62f28f1f38516070c4c8971b1d3"},
 ]
 readability = [
     {file = "readability-0.3.1.tar.gz", hash = "sha256:f9030df8bc31aad45baffa9a2d9ce1fdd8051833e5b5bda3027df32fdec00fad"},
