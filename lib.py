@@ -7,15 +7,15 @@ import readability
 
 clean = re.compile(r"(:?@|http)[^ ]+", re.IGNORECASE)
 
+CONSUMER_KEY = os.environ["TWITTER_CONSUMER_KEY"]
+CONSUMER_SECRET = os.environ["TWITTER_CONSUMER_SECRET"]
+ACCESS_TOKEN = os.environ["TWITTER_ACCESS_TOKEN"]
+ACCESS_TOKEN_SECRET = os.environ["TWITTER_ACCESS_TOKEN_SECRET"]
+
 
 def create_client():
-    consumer_key = ""
-    consumer_secret = ""
-    access_token = ""
-    access_token_secret = ""
-
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     api = tweepy.API(auth)
 
     return api
