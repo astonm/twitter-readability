@@ -8,6 +8,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return """
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <script>
     function handleSubmit() {
         event.preventDefault();
